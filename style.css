@@ -1,3 +1,9 @@
+header {
+    display: flex;
+    justify-content: center;
+    background: #CE1124;
+}
+
 .tabs {
     border: 1px solid #cccccc;
     display: flex;
@@ -76,4 +82,9 @@
 
 .image__land:hover {
     transform: scale(2.0);
+}
+
+.image__container h3 {
+    text-align: center;
+    margin-top: 0;
 }

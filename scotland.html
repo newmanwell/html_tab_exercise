@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" type="text/css" rel="stylesheet">
-        <title>Scotland</title>
+        <title>Scotland and England</title>
     </head>
-    <body>
+    <header>
         <h1>Scotland and England Trip</h1>
+    </header>
+    <body>
         <div class="tabs">
             <div class="tabs__sidebar">
                 <button class="tabs__button" data-for-tab="1">Stirling</button>
@@ -15,15 +17,30 @@
                 <button class="tabs__button" data-for-tab="3">Tab #3</button>
                 <button class="tabs__button" data-for-tab="4">Tab #4</button>
             </div>
+            <!--First Tab Content!!!!!-->
             <div class="tabs__content" data-tab="1">
                 <div class="image__container">
-                    <image class="image__port" src="images/stirling/rtb_port.jpeg" alt="Robert The Bruce Statue" />
-                
-                    <image class="image__land" src="images/stirling/stirling_castle1_land.jpeg" alt="Stirling Castle" />
-                
-                    <image class="image__land" src="images/stirling/stirling_castle2_land.jpeg" alt="Stirling Castle" />
-                </div>
+                    <div>
+                        <image class="image__port" src="images/stirling/rtb_port.jpeg" alt="Robert The Bruce Statue" />
+                        <h3>Robert The Bruce</h3>
+                    </div>
+                    <div>
+                        <image class="image__land" src="images/stirling/stirling_castle1_land.jpeg" alt="Stirling Castle" />
+                        <h3>Stirling Castle</h3>
+                    </div>
+                    <div>
+                        <image class="image__land" src="images/stirling/stirling_castle2_land.jpeg" alt="Stirling Castle" />
+                        <h3>Stirling Castle</h3>
+                    </div>
+                    <div>
+                        <image class="image__port" src="images/stirling/wallace_monument.jpeg" alt="William Wallace Monument" />
+                        <h3>William Wallace Monument</h3>
+                    </div>
             </div>
+                <button onclick="wallaceButton()">William Wallace Said?</button>
+                <p id="wallace__said"></p>
+            </div>
+            <!--Second Tab Content!!!!!-->
             <div class="tabs__content" data-tab="2">
                 <p>Tab 2</p>
             </div>
@@ -72,6 +89,10 @@
                     tabsContainer.querySelector(".tabs__sidebar .tabs__button").click();
                 });
             });
+
+            function wallaceButton() {
+                 document.getElementById("wallace__said").innerHTML = "He who holds Stirling holds Scotland -William Wallace";
+                    };
 
 
         </script>
