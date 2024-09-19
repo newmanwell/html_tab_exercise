@@ -13,7 +13,7 @@
         <div class="tabs">
             <div class="tabs__sidebar">
                 <button class="tabs__button" data-for-tab="1">Stirling</button>
-                <button class="tabs__button" data-for-tab="2">Tab #2</button>
+                <button class="tabs__button" data-for-tab="2">Highland Hikes</button>
                 <button class="tabs__button" data-for-tab="3">Tab #3</button>
                 <button class="tabs__button" data-for-tab="4">Tab #4</button>
             </div>
@@ -36,17 +36,39 @@
                         <image class="image__port" src="images/stirling/wallace_monument.jpeg" alt="William Wallace Monument" />
                         <h3>William Wallace Monument</h3>
                     </div>
-            </div>
+                </div>
                 <button onclick="wallaceButton()">William Wallace Said?</button>
                 <p id="wallace__said"></p>
             </div>
             <!--Second Tab Content!!!!!-->
             <div class="tabs__content" data-tab="2">
-                <p>Tab 2</p>
+                <div class="image__container">
+                    <div>
+                        <image class="image__port" src="images/highlands/glencoe_port.jpeg" alt="Glencoe" />
+                        <h3>Posing in Glencoe</h3>
+                    </div>
+                    <div>
+                        <image class="image__land" src="images/highlands/coos_land.jpeg" alt="Coos in Glencoe" />
+                        <h3>Coos in Glencoe</h3>
+                    </div>
+                    <div>
+                        <image class="image__land" src="images/highlands/group_land.jpeg" alt="Hiking in Orchy" />
+                        <h3>Group Hike in Orchy</h3>
+                    </div>
+                    <div>
+                        <image class="image__port" src="images/highlands/orchy_port.jpeg" alt="Bridge of Orchy" />
+                        <h3>Bridge of Orchy</h3>
+                    </div>
+                </div>
+                <button onclick="burnsButton()">Robert Burns Said?</button>
+                <p id="burns__said"></p>
+                
             </div>
+            <!--Third Tab Content!!!!!!!-->
             <div class="tabs__content" data-tab="3">
                 <p>Tab 3</p>
             </div>
+            <!--Fourth Tab Content!!!!!!-->
             <div class="tabs__content" data-tab="4">
                 <p>Tab 4</p>
             </div>
@@ -93,7 +115,10 @@
             function wallaceButton() {
                  document.getElementById("wallace__said").innerHTML = "He who holds Stirling holds Scotland -William Wallace";
                     };
-
+            
+            function burnsButton() {
+                 document.getElementById("burns__said").innerHTML = "Wherever I wander, wherever I rove, The hills of the Highlands forever I love. -Robert Burns";
+                    };
 
         </script>
 
