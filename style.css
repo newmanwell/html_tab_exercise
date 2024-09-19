@@ -14,7 +14,7 @@ body {
 }
 
 .tabs__sidebar {
-    width: 125px;
+    width: 150px;
     flex-shrink: 0;
     background: #cccccc;
 }

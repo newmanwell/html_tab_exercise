@@ -14,7 +14,7 @@
             <div class="tabs__sidebar">
                 <button class="tabs__button" data-for-tab="1">Stirling</button>
                 <button class="tabs__button" data-for-tab="2">Highland Hikes</button>
-                <button class="tabs__button" data-for-tab="3">Tab #3</button>
+                <button class="tabs__button" data-for-tab="3">Glasgow and Troon</button>
                 <button class="tabs__button" data-for-tab="4">Tab #4</button>
             </div>
             <!--First Tab Content!!!!!-->
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <button onclick="wallaceButton()">William Wallace Said?</button>
-                <p id="wallace__said"></p>
+                <h3 id="wallace__said"></h3>
             </div>
             <!--Second Tab Content!!!!!-->
             <div class="tabs__content" data-tab="2">
@@ -61,12 +61,33 @@
                     </div>
                 </div>
                 <button onclick="burnsButton()">Robert Burns Said?</button>
-                <p id="burns__said"></p>
+                <h3 id="burns__said"></h3>
                 
             </div>
             <!--Third Tab Content!!!!!!!-->
             <div class="tabs__content" data-tab="3">
-                <p>Tab 3</p>
+                <div class="image__container">
+                    <div>
+                        <image class="image__port" src="images/glasgow_troon/cone1_port.JPG" alt="Conehead Statue" />
+                        <h3>Posing in front of Conehead</h3>
+                    </div>
+                    <div>
+                        <image class="image__port" src="images/glasgow_troon/cone2_port.JPG" alt="Conehead" />
+                        <h3>Conehead Man!</h3>
+                    </div>
+                    <div>
+                        <image class="image__port" src="images/glasgow_troon/kilt_port.JPG" alt="Bagpiper in a Kilt" />
+                        <h3>All the stereotypes!</h3>
+                    </div>
+                    <div>
+                        <image class="image__port" src="images/glasgow_troon/theopen_port.JPG" alt="Golfer in sand trap" />
+                        <h3>Watching The Open!</h3>
+                    </div>
+                </div>
+                <button onclick="glasgowButton()">What about Glasgow?</button>
+                <h3 id="glasgow__said"></h3>
+                
+                
             </div>
             <!--Fourth Tab Content!!!!!!-->
             <div class="tabs__content" data-tab="4">
@@ -80,6 +101,9 @@
 
 
         <script>
+
+            //JS that changes the content when clicking on a tab
+
             function setupTabs () {
                 document.querySelectorAll(".tabs__button").forEach(button => {
                     button.addEventListener("click", () => {
@@ -101,16 +125,20 @@
                 });
             }
 
-            
+            //JS to run after website loads
         
         
             document.addEventListener("DOMContentLoaded", () => {
                 setupTabs();
 
+             //JS to activate the first tab
+
                 document.querySelectorAll(".tabs").forEach(tabsContainer => {
                     tabsContainer.querySelector(".tabs__sidebar .tabs__button").click();
                 });
             });
+
+            //JS for the buttons in the tabs
 
             function wallaceButton() {
                  document.getElementById("wallace__said").innerHTML = "He who holds Stirling holds Scotland -William Wallace";
@@ -118,6 +146,10 @@
             
             function burnsButton() {
                  document.getElementById("burns__said").innerHTML = "Wherever I wander, wherever I rove, The hills of the Highlands forever I love. -Robert Burns";
+                    };
+            
+            function glasgowButton() {
+                 document.getElementById("glasgow__said").innerHTML = "A person from Glasgow has more fun at a funeral than a person from Edinburgh has at a wedding -Some guy";
                     };
 
         </script>
