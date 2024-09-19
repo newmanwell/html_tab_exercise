@@ -15,7 +15,7 @@
                 <button class="tabs__button" data-for-tab="1">Stirling</button>
                 <button class="tabs__button" data-for-tab="2">Highland Hikes</button>
                 <button class="tabs__button" data-for-tab="3">Glasgow and Troon</button>
-                <button class="tabs__button" data-for-tab="4">Tab #4</button>
+                <button class="tabs__button" data-for-tab="4">Manchester/London</button>
             </div>
             <!--First Tab Content!!!!!-->
             <div class="tabs__content" data-tab="1">
@@ -91,7 +91,28 @@
             </div>
             <!--Fourth Tab Content!!!!!!-->
             <div class="tabs__content" data-tab="4">
-                <p>Tab 4</p>
+                <div class="image__container">
+                    <div>
+                        <image class="image__port" src="images/manchester_london/manclib_port.JPG" alt="Inside Manchester Library" />
+                        <h3>Rylands Library</h3>
+                    </div>
+                    <div>
+                        <image class="image__port" src="images/manchester_london/ratpigeon_port.jpg" alt="Rat and Pigeon" />
+                        <h3>Rat and Pigeon</h3>
+                    </div>
+                    <div>
+                        <image class="image__port" src="images/manchester_london/bigben_port.JPG" alt="Big Ben" />
+                        <h3>Big Ben (of course)</h3>
+                    </div>
+                    <div>
+                        <image class="image__port" src="images/manchester_london/parliment_port.JPG" alt="Parliament" />
+                        <h3>Is this Parliament?</h3>
+                    </div>
+                </div>
+                <button onclick="oasisButton()">What about Oasis?</button>
+                <h3 id="oasis__said"></h3>
+
+
             </div>
         </div>
 
@@ -131,7 +152,7 @@
             document.addEventListener("DOMContentLoaded", () => {
                 setupTabs();
 
-             //JS to activate the first tab
+             //JS to activate the first tab after loading
 
                 document.querySelectorAll(".tabs").forEach(tabsContainer => {
                     tabsContainer.querySelector(".tabs__sidebar .tabs__button").click();
@@ -141,15 +162,19 @@
             //JS for the buttons in the tabs
 
             function wallaceButton() {
-                 document.getElementById("wallace__said").innerHTML = "He who holds Stirling holds Scotland -William Wallace";
+                 document.getElementById("wallace__said").innerHTML = "He who holds Stirling holds Scotland  -William Wallace";
                     };
             
             function burnsButton() {
-                 document.getElementById("burns__said").innerHTML = "Wherever I wander, wherever I rove, The hills of the Highlands forever I love. -Robert Burns";
+                 document.getElementById("burns__said").innerHTML = "Wherever I wander, wherever I rove, The hills of the Highlands forever I love.  -Robert Burns";
                     };
             
             function glasgowButton() {
-                 document.getElementById("glasgow__said").innerHTML = "A person from Glasgow has more fun at a funeral than a person from Edinburgh has at a wedding -Some guy";
+                 document.getElementById("glasgow__said").innerHTML = "A person from Glasgow has more fun at a funeral than a person from Edinburgh has at a wedding  -Some guy";
+                    };
+
+            function oasisButton() {
+                 document.getElementById("oasis__said").innerHTML = "You and I are gonna live forever!  -Liam Gallagher";
                     };
 
         </script>

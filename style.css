@@ -39,7 +39,7 @@ body {
 
 .tabs__button--active {
     font-weight: bold;
-    border-right: 3px solid greenyellow;
+    border-right: 6px solid greenyellow;
     background: #dddddd;
 }
 
