@@ -1,3 +1,5 @@
+alert('Warning: Holiday pictures ahead');
+
 //JS that changes the content when clicking on a tab
 
 function setupTabs () {
@@ -36,18 +38,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //JS for the buttons in the tabs
 
-function wallaceButton() {
-     document.getElementById("wallace__said").innerHTML = "He who holds Stirling holds Scotland  -William Wallace";
+function bruceButton() {
+     document.getElementById("bruce__said").innerHTML = '"He who holds Stirling holds Scotland."  -Robert The Bruce';
         };
 
 function burnsButton() {
-     document.getElementById("burns__said").innerHTML = "Wherever I wander, wherever I rove, The hills of the Highlands forever I love.  -Robert Burns";
+     document.getElementById("burns__said").innerHTML = '"Wherever I wander, wherever I rove, The hills of the Highlands forever I love."  -Robert Burns';
         };
 
 function glasgowButton() {
-     document.getElementById("glasgow__said").innerHTML = "A person from Glasgow has more fun at a funeral than a person from Edinburgh has at a wedding  -Some guy";
+     document.getElementById("glasgow__said").innerHTML = '"A person from Glasgow has more fun at a funeral than a person from Edinburgh has at a wedding."  -Some guy';
         };
 
 function oasisButton() {
-     document.getElementById("oasis__said").innerHTML = "You and I are gonna live forever!  -Liam Gallagher";
+     document.getElementById("oasis__said").innerHTML = '"You and I are gonna live forever!"  -Liam Gallagher';
         };
