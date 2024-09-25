@@ -40,16 +40,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function bruceButton() {
      document.getElementById("bruce__said").innerHTML = '"He who holds Stirling holds Scotland."  -Robert The Bruce';
+     document.getElementById("bruce__button").style.backgroundColor = "#CE1124";
         };
 
 function burnsButton() {
      document.getElementById("burns__said").innerHTML = '"Wherever I wander, wherever I rove, The hills of the Highlands forever I love."  -Robert Burns';
+     document.getElementById("burns__button").style.backgroundColor = "#CE1124";
         };
 
 function glasgowButton() {
      document.getElementById("glasgow__said").innerHTML = '"A person from Glasgow has more fun at a funeral than a person from Edinburgh has at a wedding."  -Some guy';
+     document.getElementById("glasgow__button").style.backgroundColor = "#CE1124";
         };
 
 function oasisButton() {
      document.getElementById("oasis__said").innerHTML = '"You and I are gonna live forever!"  -Liam Gallagher';
+     document.getElementById("oasis__button").style.backgroundColor = "#CE1124";
         };
