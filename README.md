@@ -1,0 +1,1 @@
+This was my first attempt at adding JavaScript to a webpage. Each tab pulls up different content (pictures of places visited in Scotland and England) and some other buttons that display quotes related to those places.
